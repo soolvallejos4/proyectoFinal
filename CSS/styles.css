@@ -360,7 +360,7 @@ BOTONESSSSSSSS
 
 /* sobre nosotros titulo*/
 .section-title {
-    background-color: red;
+   
     width: 100%;
     padding: 0 15px ;
     text-align: center;
@@ -368,8 +368,10 @@ BOTONESSSSSSSS
 
 }
 .section-title h2 {
-    font-size: 35px;
+    font-size: 50px;
     text-transform: capitalize;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background-color: yellow;
 
 }
 .img-home {
@@ -384,6 +386,8 @@ BOTONESSSSSSSS
     font-size: 30px;
     text-transform: capitalize;
     margin: 0 0 15px;
+    text-align: center;
+    
 
 }
 
@@ -398,6 +402,7 @@ p {
 
 .about-text .btn {
     margin: 15px 0 0 ;
+    
 }
 .about-img img {
     width: 100%;
@@ -406,6 +411,14 @@ p {
 .about-img .img-box {
     position: relative;
 }
+
+.about-img .img-box::before {
+   
+}
+
+
+
+
 .about-img .img-box h3 {
     position: absolute ;
     background-color: white;
@@ -414,6 +427,8 @@ p {
     max-width: 250px;
     text-align: center;
     transform: translate(-50%, -50%);
+    font-size: 30px;
+
 
 
 
