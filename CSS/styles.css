@@ -430,7 +430,40 @@ p {
     font-size: 30px;
 
 
+}
 
 
+/*------------------M E N U ---------------------*/
 
+.menu-section {
+    background-color: var(--dark-light);
+
+}
+.menu-section .section-title {
+    margin-bottom: 40px;
+}
+.menu-tabs {
+
+    padding:  0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.menu-tab-item {
+    font-size: 18px;
+    font-family: inherit;
+    text-transform: capitalize;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    margin: 0 10px 10px;
+    transition: color 0.3s ease;
+
+}
+
+.menu-tab-item.active {
+    color: var((--main-color))
 }
