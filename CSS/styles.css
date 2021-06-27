@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+   
  
 
 }
@@ -424,8 +425,8 @@ p {
     position: absolute ;
     background-color: white;
     left: 50%;
-    width: 100%;
-    max-width: 250px;
+    /* width: 100%; */
+    max-width: 300px;
     text-align: center;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -435,3 +436,77 @@ p {
 
 
 /*------------------M E N U ---------------------*/
+
+.menu {
+    background-color: var(--dark-light);
+   
+}
+h4 {
+    font-size: 20px;
+    
+}
+
+.menu .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+.card {
+    width: 33.3%;
+    
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+
+}
+.card-header {
+    text-align: center;
+    padding: 50px 10px;
+    
+    color: #fff
+}
+.card-body {
+    padding:30px;
+    text-align: center;
+    font-size: 18px;
+
+}
+.card-body .btn {
+    display: block;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c ,  #ff4b2b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0 , 0, 0, 0.25)
+
+}
+
+/* media queries */
+@media screend and (max-width:1000px) {
+
+
+    .card {
+        width: 40%;
+    }
+
+
+}
+@media screend and (max-width:620px) {
+
+    .menu .container {
+        width: 100%;
+    }
+    .card {
+        width: 40%;
+    }
+
+
+}
