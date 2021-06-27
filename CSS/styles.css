@@ -441,8 +441,16 @@ p {
     background-color: var(--dark-light);
    
 }
+.section-title2 {
+    padding-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+ color: white;
+ font-size: 40px;
+}
+
 h4 {
     font-size: 20px;
+    padding-bottom: 20px;
     
 }
 
@@ -455,16 +463,14 @@ h4 {
 }
 .card {
     width: 33.3%;
-    
-    border: 1px solid #ccc;
-    margin-bottom: 50px;
+    border: 0px solid #ccc;
+    margin-bottom: 20px;
     transition: 0.3s;
 
 }
 .card-header {
     text-align: center;
-    padding: 50px 10px;
-    
+    padding: 20px 20px;
     color: #fff
 }
 .card-body {
@@ -477,8 +483,8 @@ h4 {
     display: block;
     color: white;
     text-align: center;
-    background: linear-gradient(to right, #ff416c ,  #ff4b2b);
-    margin-top: 30px;
+    background: linear-gradient(to right, #01852d ,  #8f9e05);
+    margin-top: 20px;
     text-decoration: none;
     padding: 10px 5px;
 
