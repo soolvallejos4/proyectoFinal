@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-   
- 
-
 }
 
 :root {
@@ -21,28 +18,20 @@
 }
 
 
-::before, 
-::after {
-    box-sizing: border-box;
-}
-body{
+/*------GENERAL------*/
+body {
     font-size: 16px;
     line-height: 1.5;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    
-
-
 }
-
 img {
     vertical-align:middle ;
     max-width:100% ;
     width: 200px;
 
 }
-
 a {
     text-decoration: none;
 
@@ -55,14 +44,14 @@ ul {
 h1 {
     font-size: 50px;
     font-family: 'Dancing Script', cursive;
- color: white;
+    color: white;
    
 }
 .h1-p {
   color:white;
 
 }
-h2{
+h2 {
     font-weight: 600;
     
 }
@@ -73,9 +62,7 @@ h3,h4,h5,h6 {
 
 .container {
     max-width: 1170px;
-
-    margin:auto;
-    
+    margin:auto;   
 }
 .row {
     display: flex;
@@ -94,9 +81,7 @@ h3,h4,h5,h6 {
 
 }
 
-/*-----------
-BOTONESSSSSSSS
- ---------------- */
+/*-----------BOTONESSSSSSSS---------------- */
 
  .btn{
      display: inline-block;
@@ -130,22 +115,17 @@ BOTONESSSSSSSS
      }
  }
 
-/*-----------
- header
- ---------------- */
+/*-----------header---------------- */
 
 .header {
     padding: 2px 0;
-  
     position: fixed;
     left: 0;
     top: 0;
     z-index: 99;
     width: 100%;
-  background-color:var(--dark-light)
-
-
-    }
+    background-color:var(--dark-light)
+}
 .header::before {
     content: '';
     position: absolute;
@@ -157,16 +137,15 @@ BOTONESSSSSSSS
     box-shadow: var(--shadow);
     z-index: -1;
     transition: transform 0.5s ease;
-    transform: translateY(-100%)
-
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
 }
 .header.sticky::before {
     transform: translateY(-100%);
-    
-
 }
-
-
 .header  .logo {
     min-height: 34px;
     display: flex;
@@ -176,9 +155,6 @@ BOTONESSSSSSSS
 
 
 }
-
-
-
 .header .nav-toggler {
     height: 34px;
     width: 44px;
@@ -193,7 +169,6 @@ BOTONESSSSSSSS
 
 
 }
-
 .header .nav-toggler.active {
     position: absolute;
     z-index: 1;
@@ -202,11 +177,6 @@ BOTONESSSSSSSS
     transform: translateX(-200px);
 
 }
-
-
-
-
-
 .header .nav-toggler span {
     height:2px;
     width: 30px;
@@ -229,31 +199,25 @@ BOTONESSSSSSSS
     height: 100%;
     width: 100%;
     background-color: var(--white);
-
-
 }
 .header .nav-toggler span::before {
     transform: translateY(-8px);
-
 }
 .header .nav-toggler.active span::before {
     transform: rotate(45deg);
     transition: transform 0.5s ease;
 }
-
-
-
 .header .nav-toggler span::after {
-    transform: translateY(8px);
-    
+    transform: translateY(8px)  ;
+    -webkit-transform: translateY(8px)  ;
+    -moz-transform: translateY(8px)  ;
+    -ms-transform: translateY(8px)  ;
+    -o-transform: translateY(8px)  ;
 }
-
 .header .nav-toggler.active span::after {
     transform: rotate(-45deg);
     transition: transform 0.5s ease;
 }
-
-
 .header .nav {
     position: fixed;
     right: 0;
@@ -267,27 +231,19 @@ BOTONESSSSSSSS
     transition: transform 0.5s ease;
     transform: translateX(100%);
 }
-
 .header .nav.open {
     transform: translateX(0%);
 }
-
-
-
-
-
 .header .nav ul li a {
     display: block;
     font-size: 25px;
     color: var(--white);
     padding:10px 30px;
     text-transform: capitalize;
-    transition: color 0.3s ease;
-   
+    transition: color 0.3s ease;  
 }
 .header .nav ul li a:hover {
     color:var(--main-color);
-
 }
 
 /*--------------seccion de inicio--------------*/
@@ -306,7 +262,6 @@ BOTONESSSSSSSS
     background-color:black ;
     opacity: 0.7;
     z-index: -1;
-
 }
 .home-section .home-bg {
     position: absolute;
@@ -320,61 +275,50 @@ BOTONESSSSSSSS
     background-position: center;
     z-index: -2;
     animation: zoomInOut 20s ease infinite;
-
 }
 
 .home-section .min-vh-100 {
     padding: 130px 0;
-
 }
 
-.home-text {
-   
+.home-text { 
     padding: 0 15px;
     max-width: 700px;
     width: 100%;
     margin: auto;
     text-align: center;
-
 }
 .home-text h1 {
     font-family:  'Dancing Script', cursive;
     font-size: 60px;
     line-height: 75px;
     margin: 0 0 5px;
-
 }
 .home-text p {
     margin: 0 0 30px;
-
 }
 
 /* ------------SOBRE NOSOTROS S E C C I O N ------- */
 .about-section {
     background-color: var(--dark-light);
-
 }
 
 .sec-padding {
-    padding: 80px 0;
-    
+    padding: 80px 0; 
 }
 
 /* sobre nosotros titulo*/
 .section-title {
-   
     width: 100%;
     padding: 0 15px ;
     text-align: center;
     margin-bottom: 60px;
-
 }
 .section-title h2 {
     font-size: 50px;
     text-transform: capitalize;
     font-family: 'Big Shoulders Stencil Display', cursive;
     background-color: yellow;
-
 }
 .img-home {
     width: 900px;
@@ -383,19 +327,15 @@ BOTONESSSSSSSS
     width: 50%;
     padding: 0 15px;
 }
-
 .about-text h3 {
     font-size: 30px;
     text-transform: capitalize;
     margin: 0 0 15px;
     text-align: center;
-    
-
 }
 
 p {
-    font-size: 16px;
-    
+    font-size: 16px; 
 }
 .about-text p{
 
