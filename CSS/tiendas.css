@@ -5,3 +5,8 @@ iframe{
 .mapa{
     margin-top: 10px;
 }
+
+nav{
+  font-family: 'Poppins', sans-serif;
+    font-weight: 300;   
+}
