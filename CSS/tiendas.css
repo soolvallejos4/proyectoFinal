@@ -1,12 +1,39 @@
-iframe{
-  width: 100%;  
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+height:70%;
 }
-
-.mapa{
-    margin-top: 10px;
+/* Optional: Makes the sample page fill the window. */
+html,body {
+height: 100%;
+margin: 0;
+padding: 0;
 }
-
 nav{
   font-family: 'Poppins', sans-serif;
     font-weight: 300;   
+}
+/*Estilos a los markes*/
+
+.window{
+  height: fit-content;
+  width:fit-content;
+  padding: 0 2rem;
+}
+
+
+.address, .phone{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+ 
+}
+.address > i{
+  margin-right: 1rem;
+  color: tomato;
+}
+
+.phone > i{
+  margin-right: 1rem;
+  color: lightblue;
 }
