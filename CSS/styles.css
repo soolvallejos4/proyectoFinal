@@ -382,9 +382,17 @@ p {
 }
 .section-title2 {
     padding-bottom: 20px;
+    text-align: center;
+
     font-family: 'Dancing Script', cursive;
  color: white;
- font-size: 40px;
+ 
+}
+
+#desayuno , h2 {
+
+    font-size: 60px;
+
 }
 
 h4 {
