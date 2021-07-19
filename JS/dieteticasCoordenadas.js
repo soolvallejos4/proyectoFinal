@@ -80,10 +80,14 @@ let dieteticas = [
    
   { name: "Almacén Conciente", lat: -34.852591747241384, lng: -58.52059744740566, address: "Av. Conquista del desierto 127, Ezeiza", phone: "Sin información"}, 
    
-  // { name: , lat: , lng: , address: , phone:},
-  // { name: , lat: , lng: , address: , phone:}, 
-  // { name: , lat: , lng: , address: , phone:},
+  { name: "La Naturaleza Dietética & Herborista", lat: -34.771034254407574, lng: -58.22652304555185, address: "Av. 14 3161, Berazategui", phone: "011 4226-8833"},
+   
+  { name: "Dietética El Ceibo", lat: -34.72658704606302, lng: -58.24994458593026, address: "Av. Mitre 984, Quilmes", phone: "011 4224-8469"},
+   
+  
 
+  { name: "Manyula", lat: -34.71187085373017, lng:  -58.28313424018897, address: "9 de julio 141, Bernal", phone: "011 7038-3762"},
+  
 
    // { name: , lat: , lng: , address: , phone:}, 
   // { name: , lat: , lng: , address: , phone:},
