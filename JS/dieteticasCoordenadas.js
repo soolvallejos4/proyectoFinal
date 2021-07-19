@@ -1,6 +1,7 @@
 //Muestra las coordenadas de las tiendas de todo el pais, junto con su nombre, direccion y telefono.
 let dieteticas = [
   {
+    //CABA
    name: "Dietetica Rojas",
    lat: -34.62010988097318, 
    lng: -58.44162956027965, 
@@ -15,11 +16,11 @@ let dieteticas = [
     phone: " +54 9 11-6954-1126 "
   },
   { 
-    name: "Almacen Natural",
-    lat: -34.529847866978805,
-    lng: -58.46567344498235, 
-    address: "Francisco N. de Laprida 417, Provincia de Buenos Aires", 
-    phone: "+54 11-3044-8947" 
+    name: "Dietetica La Floresta",
+    lat: -34.63273700244979,
+    lng: -58.48112444499763, 
+    address: "Av. Rivadavia 8357, CABA", 
+    phone: "+54 011 46721979" 
   },  
   { 
     name: "Dietética Viamonte", 
@@ -28,12 +29,64 @@ let dieteticas = [
     address: "Viamonte 859, C1053 CABA", 
     phone: "+54 11-4322-9380" 
   },  
-  { name: "Dietética la gran manzana", 
-    lat: -34.69317199015292,
-    lng: -58.501537406339665, 
-    address: "Av. Vélez Sarsfield 453, Villa Madero, Provincia de Buenos Aires", 
-    phone: "+54 11-7003-9016"},
-  // { name: , lat: , lng: , address: , phone:},
-  // { name: , lat: , lng: , address: , phone:},
+  { name: "Dietéticas Tomy", 
+    lat: -34.63071596048988,
+    lng: -58.469109490719035, 
+    address: "Av. Rivadavia 7390,CABA", 
+    phone: ""},
+     
+     
+    //Zona Norte
+  { name: "Dietéticas Tomi", lat: -34.536104175010855, lng: -58.477015513409086, address: "Av. Maipú 201, Vicente López" , phone: "011 4719-7600"},
+  
+   { name: "Dietética Señor Sol", lat: -34.50582366843237, lng: -58.493164431243976, address: "Av. Maipú 3239, Vicente López" , phone: "011 4799-5548"},
    
-];
+   { name: "Nutralgica", lat: -34.508288143631255, lng: -58.481228602020444, address: "Corrientes 681, Olivos", phone: "011 4711-3909"},
+   
+  { name: "La nueva Dietética", lat: -34.51566124116742, lng: -58.542769204014036, address: "Av. de Mayo 893, zona norte" , phone: "011 6459-9574"},
+   
+  { name: "Sanas Delícias", lat:  -34.47129788767244, lng: -58.5157251612748, address: "Av. Centenario 416, San Isidro", phone: "011 4732-0916"},
+   
+ { name: "Dietética Arenales", lat: -34.48865072077361, lng: -58.498272699250805, address: "Arenales 2040, Martínez", phone: "011 4798-2087"},
+//{ name: , lat: , lng: , address: , phone:},
+//{ name: , lat: , lng: , address: , phone:},
+//{ name: , lat: , lng: , address: , phone:},
+  
+ 
+ 
+   
+
+   //Zona Oeste
+   { name: "Dietética Nomadas", lat: -34.62714924220614, lng:  -58.78571889842443, address: "Marcos de Bueno 530, Moreno", phone:"Sin información"},
+   { name: "Dietética Pepita y Sesamo", lat: -34.65138345157452, lng: -58.79205808256709, address: "Claudio María Joly 2888, Moreno", phone: "011 4144-9016"},    
+
+   { name: "Buen día, día", lat: -34.59320529146491, lng: -58.63638496544457, address: "Av. Gdor. Vergara 4088, Hurlingham", phone: "011 3765-8244"},
+    
+   { name: "Dietética La Aldea", lat: -34.603496068124215, lng:  -58.63517582556727, address: "Av. Gdor. Vergara 3223", phone: "011 7395-5997"},
+    { name: "Dietética La Mezcla", lat:  -34.67585860490331,  lng:  -58.56399582804794, address: "Av. Pres. Dr. Arturo Umberto Illia 2494, San Justo", phone:"011 4441-2185"},
+
+   { name: "Fuerza Natural Dietética", lat: -34.699798846150664, lng: -58.591731249938874, address: "República de Portugal 2450, Isidro Casanova", phone: "Sin información"},
+
+    
+   // { name: , lat: , lng: , address: , phone:},
+   // { name: , lat: , lng: , address: , phone:},
+   
+   
+   //Zona Sur
+    
+   { name: "Dietética Lola", lat: -34.82211002533352, lng: -58.2769296259346, address: "Av. Eva Perón 4430, Florencio Varela", phone: "011 5976-9922"}, 
+
+  { name: "Alimnat", lat: -34.717307041006464, lng: -58.33315104414564, address: "Fabián Onsari 1481, Wilde", phone: " 011 3874-4352"},
+   
+  { name: "Almacén Conciente", lat: -34.852591747241384, lng: -58.52059744740566, address: "Av. Conquista del desierto 127, Ezeiza", phone: "Sin información"}, 
+   
+  // { name: , lat: , lng: , address: , phone:},
+  // { name: , lat: , lng: , address: , phone:}, 
+  // { name: , lat: , lng: , address: , phone:},
+
+
+   // { name: , lat: , lng: , address: , phone:}, 
+  // { name: , lat: , lng: , address: , phone:},
+
+
+  ];
