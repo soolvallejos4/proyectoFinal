@@ -69,9 +69,17 @@
                             <li><a class="dropdown-item" href="#">Cena</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  active" href="#" tabindex="-1" aria-disabled="true"><i
-                                class="fas fa-store-alt"></i> Tiendas</a>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-store-alt"></i>
+                            Tiendas
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item " href="#caba">CABA</a></li>
+                            <li><a class="dropdown-item" href="#norte">Zona Norte</a></li>
+                            <li><a class="dropdown-item" href="#oeste">Zona Oeste</a></li>
+                            <li><a class="dropdown-item" href="#sur">Zona Sur</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true"> <i
@@ -89,7 +97,7 @@
 
     <div class="container px-4 py-5" id="featured-3">
         <h2 class="pb-2 border-bottom tiendasListas">Dietéticas</h2>
-        <h2 class="pb-2 border-bottom tiendasListas">CABA</h2>
+        <h2 class="pb-2 border-bottom tiendasListas" id="caba">CABA</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="feature col tiendaNombre">
                 <i class="fas fa-store"></i>
@@ -142,7 +150,7 @@
             </div>
         </div>
         <!--Comienzo de zona Norte-->
-        <h2 class="pb-2 border-bottom tiendasListas">Zona Norte</h2>
+        <h2 class="pb-2 border-bottom tiendasListas" id="norte">Zona Norte</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="feature col tiendaNombre">
                 <i class="fas fa-store"></i>
@@ -207,7 +215,7 @@
         <!--fIN zona norte-->
 
         <!--Comienzo de zona oeste-->
-        <h2 class="pb-2 border-bottom tiendasListas">Zona Oeste</h2>
+        <h2 class="pb-2 border-bottom tiendasListas" id="oeste">Zona Oeste</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="feature col tiendaNombre">
                 <i class="fas fa-store"></i>
@@ -271,7 +279,7 @@
         <!--Comienzo de zona Sur-->
 
 
-        <h2 class="pb-2 border-bottom tiendasListas">Zona Sur</h2>
+        <h2 class="pb-2 border-bottom tiendasListas" id="sur">Zona Sur</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="feature col tiendaNombre">
                 <i class="fas fa-store"></i>
@@ -287,7 +295,7 @@
             <div class="feature col tiendaNombre">
                 <i class="fas fa-store"></i>
                 <h5>Alimnat</h5>
-                <p>Dirección: Fabián Onsari 1481, Wilde<br>
+                <p>Dirección: Fabián Onsari 1481, Wilde.<br>
                     Teléfono: 011 3874-4352</p>
                 <a href="#" id="tiendaNombre" class="icon-link">
                     Ver en mapa

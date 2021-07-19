@@ -1,4 +1,4 @@
-//Muestra las coordenadas de las tiendas de todo el pais, junto con su nombre, direccion y telefono.
+//Muestra las coordenadas de las tiendas de todo el pais, junto con su nombre, dirección y teléfono.
 let dieteticas = [
   {
     //CABA
