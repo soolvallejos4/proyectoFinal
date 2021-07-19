@@ -1,3 +1,4 @@
+//Muestra las coordenadas de las tiendas de todo el pais, junto con su nombre, direccion y telefono.
 let dieteticas = [
   {
    name: "Dietetica Rojas",

@@ -13,14 +13,12 @@ nav{
   font-family: 'Poppins', sans-serif;
     font-weight: 300;   
 }
-/*Estilos a los markes*/
-
+/*Estilos a los markes dentro del mapa*/
 .window{
   height: fit-content;
   width:fit-content;
   padding: 0 2rem;
 }
-
 
 .address, .phone{
   display: flex;
