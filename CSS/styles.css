@@ -313,16 +313,20 @@ h3,h4,h5,h6 {
     margin-bottom: 60px;
 }
 .section-title h2 {
+    margin: auto;
     font-size: 50px;
     text-transform: capitalize;
     font-family: 'Big Shoulders Stencil Display', cursive;
     background-color: yellow;
 }
 .img-home {
-    width: 900px;
+    max-width:700px;
+    margin-left: 20%;
+    
 }
 .about-text , .about-img {
-    width: 50%;
+    width: 100%;
+    height: auto;
     padding: 0 15px;
 }
 .about-text h3 {
@@ -348,9 +352,9 @@ p {
     width: 100%;
     border-radius: 10px;
 }
-.about-img .img-box {
+/* .about-img .img-box {
     position: relative;
-}
+} */
 
 /* .about-img .img-box::before {
    
@@ -408,15 +412,16 @@ h4 {
 
 }
 .card {
-    width: 33.3%;
+    /* width: 33.3%; */
     border: 0px solid #ccc;
     margin-bottom: 20px;
     transition: 0.3s;
 
 }
 .card-header {
+    margin-top: 10px;
     text-align: center;
-    padding: 20px 20px;
+    padding: 20px;
     color: #fff
 }
 .card-body {
@@ -442,25 +447,18 @@ h4 {
 }
 
 /* media queries */
-@media screend and (max-width:1000px) {
-
-
-    .card {
-        width: 40%;
+@media screen and (max-width: 360px){
+    .img-home {
+        margin-left: 0;
+        
     }
-
-
 }
-@media screend and (max-width:620px) {
+ 
 
-    .menu .container {
-        width: 100%;
+@media screen and (min-width: 361px) and (max-width: 650px){
+    .img-home {
+        margin-left: 0;
+        
     }
-    .card {
-        width: 40%;
-    }
-
-
 }
-
 
