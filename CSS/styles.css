@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    overflow-x:hidden;
 }
 
 :root {
@@ -24,6 +25,7 @@ body {
     -webkit-tap-highlight-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    
 }
 img {
     vertical-align:middle ;
@@ -298,6 +300,7 @@ h3,h4,h5,h6 {
 
 /* ------------SOBRE NOSOTROS S E C C I O N ------- */
 .about-section {
+    
     background-color: var(--dark-light);
 }
 
@@ -308,6 +311,7 @@ h3,h4,h5,h6 {
 /* sobre nosotros titulo*/
 .section-title {
     width: 100%;
+   
     padding: 0 15px ;
     text-align: center;
     margin-bottom: 60px;
@@ -315,6 +319,7 @@ h3,h4,h5,h6 {
 .section-title h2 {
     margin: auto;
     font-size: 50px;
+    
     text-transform: capitalize;
     font-family: 'Big Shoulders Stencil Display', cursive;
     background-color: yellow;
@@ -330,6 +335,7 @@ h3,h4,h5,h6 {
     padding: 0 15px;
 }
 .about-text h3 {
+    overflow-y: hidden;
     font-size: 30px;
     text-transform: capitalize;
     margin: 0 0 15px;
@@ -367,7 +373,7 @@ p {
     position: absolute ;
     background-color: white;
     left: 50%;
-    /* width: 100%; */
+    width: 100%;
     max-width: 300px;
     text-align: center;
     transform: translate(-50%, -50%);
