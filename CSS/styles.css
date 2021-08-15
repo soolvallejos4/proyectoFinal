@@ -329,6 +329,7 @@ h3,h4,h5,h6 {
     margin-left: 20%;
     
 }
+
 .about-text , .about-img {
     width: 100%;
     height: auto;
@@ -343,16 +344,20 @@ h3,h4,h5,h6 {
 }
 
 p {
+    width: 80%;
+    margin: auto;
+    text-align:center;
     font-size: 16px; 
 }
-.about-text p{
 
-    margin: 0 0 15px;
-}
 
-.about-text .btn {
+.about-text {
     margin: 15px 0 0 ;
     
+}
+
+.btn{    
+  margin-left: 40%;
 }
 .about-img img {
     width: 100%;
@@ -459,6 +464,9 @@ h4 {
         margin-left: 0;
         
     }
+    .btn{    
+        margin-left: 23%;
+      }
 }
  
 
@@ -467,6 +475,9 @@ h4 {
         margin-left: 0;
         
     }
+    .btn{    
+        margin-left: 35%;
+      }
 }
 
 @media screen and (min-width: 651px) and (max-width: 900px){
