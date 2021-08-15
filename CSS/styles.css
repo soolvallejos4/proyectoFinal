@@ -420,6 +420,7 @@ h4 {
 .card {
     /* width: 33.3%; */
     border: 0px solid #ccc;
+    margin-right: 2px;
     margin-bottom: 20px;
     transition: 0.3s;
 
