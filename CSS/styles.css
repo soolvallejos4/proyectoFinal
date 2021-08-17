@@ -466,8 +466,11 @@ h4 {
 @media screen and (max-width: 360px)
 {
     .img-home {
-        margin-left: 0;
-        
+        margin-left: 0;        
+    }
+
+    #desayuno, #almuerzo, #cena{
+        font-size: 50px;
     }
 }
  
