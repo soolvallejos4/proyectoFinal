@@ -493,6 +493,9 @@ h4 {
         margin-left: 0;
         
     }
+    .dropdown-menu{
+        width: 20px;
+    }
     
 }
 
@@ -501,5 +504,8 @@ h4 {
     .img-home 
     {
         margin-left: 0;        
+    }
+    .dropdown-menu{
+        width: 20px;
     }
 }
