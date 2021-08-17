@@ -218,6 +218,11 @@ h3,h4,h5,h6 {
     transform: rotate(-45deg);
     transition: transform 0.5s ease;
 }
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0rem;
+}
+
 .header .nav {
     position: fixed;
     right: 0;
@@ -461,6 +466,8 @@ h4 {
     box-shadow: 0 0 40px -10px rgba(0 , 0, 0, 0.25)
 
 }
+
+
 
 /* media queries */
 @media screen and (max-width: 360px)

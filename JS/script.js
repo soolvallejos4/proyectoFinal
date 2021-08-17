@@ -1,5 +1,5 @@
 //--------toggle navbar------
-const navToggler = document.querySelector(".nav-toggler");
+const navToggler = document.querySelector(".navbar-toggler");
 navToggler.addEventListener("click", toggleNav )
 
 function toggleNav() {
