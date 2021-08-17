@@ -479,6 +479,11 @@ h4 {
     #desayuno, #almuerzo, #cena{
         font-size: 50px;
     }
+    .dropdown-menu{
+        width: 20px;
+    }
+
+
 }
  
 
