@@ -317,9 +317,8 @@ h3,h4,h5,h6 {
     margin-bottom: 60px;
 }
 .section-title h2 {
-    margin: auto;
-    font-size: 50px;
-    
+    margin: auto;    
+    font-size: 50px;    
     text-transform: capitalize;
     font-family: 'Big Shoulders Stencil Display', cursive;
     background-color: yellow;
@@ -376,6 +375,7 @@ p {
 
 .about-img .img-box h3 {
     position: absolute ;
+    overflow: hidden;
     background-color: white;
     left: 50%;
     width: 100%;
