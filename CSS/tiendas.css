@@ -6,3 +6,14 @@
     margin: 20px auto;
     
      }
+
+.tiendasPopup{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 5px;
+    
+  
+}
+
+.tiendasPopup li{
+    margin: 10px
+}
