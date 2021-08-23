@@ -1,60 +1,8 @@
-/* Always set the map height explicitly to define the size of the div
-* element that contains the map. */
-#map {
-height:70%;
-}
-/* Optional: Makes the sample page fill the window. */
-html,body {
-height: 100%;
-margin: 0;
-padding: 0;
-}
 
-body {
-    font-size: 16px;
-    line-height: 1.5;
-    -webkit-tap-highlight-color: transparent;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-}
-nav{
-  font-family: 'Poppins', sans-serif;
-    font-weight: 300;   
-}
-/*Estilos a los markes dentro del mapa*/
-.window{
-  height: fit-content;
-  width:fit-content;
-  padding: 0 2rem;
-}
 
-.address, .phone{
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
- 
-}
-.address > i{
-  margin-right: 1rem;
-  color: tomato;
-}
-
-.phone > i{
-  margin-right: 1rem;
-  color: lightblue;
-}
-/*Quito el estilo a los links de ver mapa*/
-
-a:link{
-  text-decoration: none;
-  
-}
-a:visited{
-  text-decoration: none;
-  color: var(--dark);  
-}
-
-h5{
-  text-align: center;
-  padding-bottom: 8px;
-}
+#mapid { 
+    width:70%;
+    height:500px;
+    margin: 20px auto;
+    
+     }
