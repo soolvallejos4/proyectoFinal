@@ -15,5 +15,20 @@
 }
 
 .tiendasPopup li{
-    margin: 10px
+    margin: auto;
+}
+
+@media screen and (max-width: 600px){
+    #mapid { 
+        width:90%;
+        height:300px;
+        margin: 20px auto;
+                 }
+    .leaflet-popup-content-wrapper{
+        width: 247px;
+    }
+    .leaflet-popup-content{
+        width: 200px;
+    }
+
 }
