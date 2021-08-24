@@ -184,4 +184,3 @@ let diet = [
 
 
 ]
-module.exports = diet;

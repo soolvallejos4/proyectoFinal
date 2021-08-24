@@ -10,8 +10,23 @@ for (let i = 0; i < diet.length; i++) {
 
     console.log(diet[i]);
 
-    market = new L.marker([diet[i][0], diet[i][1]]).bindPopup(`<ul class="tiendasPopup">
+    marker = new L.marker([diet[i][0], diet[i][1]]).bindPopup(`<ul class="tiendasPopup">
     <li>${diet[i][2]}</li><li>🏪 ${diet[i][3]}</li><li>☎️ ${diet[i][4]}</li></ul> `).addTo(mymap)
 }
+
+
+
+
+// L.DomEvent.on(tiendas,'click',function(e){
+//     console.log('Button clicked')
+// });
+
+
+// document.querySelectorAll('#tiendaNombre').addEventListener('click',()=>{
+//     marker.forEach((e)=>{
+//         e.fire('click',{marker})
+//     })
+
+// })
 
 
