@@ -38,6 +38,12 @@ section{
 
 .receta img{    
    align-self: center;
+   width: 300px;
+    height:225px;
+    margin: 10px;
+    border-radius: 5px;
+
+
 }
 .receta h3{    
     text-align: center;
@@ -58,4 +64,18 @@ section{
 }
 .list-group-item{
     background-color: #c8c8c846
+}
+
+
+
+@media screen and (max-width: 600px){
+
+    section{
+        width: 90%;
+        margin: 10px auto;
+                 
+    }
+
+
+
 }
