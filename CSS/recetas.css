@@ -32,12 +32,17 @@ section{
 }
 
 .receta h2{
+    text-align: center;
     margin: 30px;
 }
+
 .receta img{    
    align-self: center;
 }
-
+.receta h3{    
+    text-align: center;
+    margin-bottom: 20px;   
+}
 .receta ul{
     align-self: center;
 }
