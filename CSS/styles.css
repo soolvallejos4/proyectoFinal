@@ -450,19 +450,19 @@ p {
     background: none;
     border: none;
     border-bottom: #0c1023 1.5px solid;
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 .form input:hover{
-    border-bottom: #01852d 2px solid;
+    border-bottom: #01852d 1.5px solid;
 
 }
 .form input:focus{
     font-size: 1.1rem;
-    
+    border-bottom: #01852d 1.5px solid;
     
 }
 
