@@ -53,6 +53,11 @@ section{
     align-self: center;
 }
 
+.receta p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
 
 /*Checkbox*/
 .list-group{
