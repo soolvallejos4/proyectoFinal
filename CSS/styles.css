@@ -250,6 +250,31 @@ h3,h4,h5,h6 {
 .header .nav ul li a:hover {
     color:var(--main-color);
 }
+/*--------------Header login --------------*/
+.login-inicio {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.login-inicio a {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+
+}
+.login-inicio a:hover {
+    border-bottom: 1px solid var(--white); 
+}
+
+.login-inicio :last-of-type {
+    padding-left: .8rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.055);
+    color: #01852d;
+}
 
 /*--------------seccion de inicio--------------*/
 .home-section {
@@ -387,6 +412,58 @@ p {
     font-size: 30px;
 
 
+}
+
+/*------------------LOG IN ---------------------*/
+.body-section{
+    background-image: url(/img/photo-1495195134817-aeb325a55b65.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 100vh;
+}
+.contenedor-section-login{
+    width: 30%;
+    margin: 9rem auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9b9b9b50;
+    height: 20rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.contenedor-section-login h4{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contenedor-section-login form{
+    text-align: center;
+}
+.form input {
+    margin-bottom: 2rem;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: #0c1023 1.5px solid;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.form input:hover{
+    border-bottom: #01852d 2px solid;
+
+}
+.form input:focus{
+    font-size: 1.1rem;
+    
+    
 }
 
 
