@@ -16,17 +16,5 @@ for (let i = 0; i < diet.length; i++) {
 
 
 
-
-// L.DomEvent.on(tiendas,'click',function(e){
-//     console.log('Button clicked')
-// });
-
-
-// document.querySelectorAll('#tiendaNombre').addEventListener('click',()=>{
-//     marker.forEach((e)=>{
-//         e.fire('click',{marker})
-//     })
-
-// })
-
-
+//Hacer click en el ver en mapa y que se habra el marker en el mapa
+let tiendas = document.querySelectorAll('#tiendaNombre')

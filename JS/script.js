@@ -24,3 +24,6 @@ window.addEventListener("scroll", function( ){
         document.querySelector(".header").classList.remove("sticky");
     }
 })
+
+
+//
