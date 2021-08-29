@@ -14,7 +14,7 @@ for (let i = 0; i < diet.length; i++) {
     <li>${diet[i][2]}</li><li>🏪 ${diet[i][3]}</li><li>☎️ ${diet[i][4]}</li></ul> `).addTo(mymap)
 }
 
-
+//traigo el link Ver en mapa
 const links = document.querySelectorAll('.links');
 
 // for (let a = 0; a < links.length; a++){
@@ -26,7 +26,8 @@ const links = document.querySelectorAll('.links');
 
 // }
 
-links.forEach((link, i)=>{
+//creo un loop para que en cada links, se cree un link y su posicion
+links.forEach((link,i)=>{
     link.addEventListener('click', ()=>{
         marker.openPopup(link[i])
     })
