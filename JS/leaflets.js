@@ -15,9 +15,7 @@ for (let i = 0; i < diet.length; i++) {
 }
 
 
-
-
-const links = document.querySelectorAll('.icon-link');
+const links = document.querySelectorAll('.links');
 
 // for (let a = 0; a < links.length; a++){
 
