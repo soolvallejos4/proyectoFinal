@@ -1,6 +1,6 @@
 //Inicializacion del mapa en la ciudad de buenos aires
 let caba = { lat: -34.62478470595177, lng: -58.482747059438395 };
-let mymap = L.map('mapid').setView(caba, 9);
+let mymap = L.map('mapid').setView(caba, 11);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mymap);
 
 
@@ -16,5 +16,22 @@ for (let i = 0; i < diet.length; i++) {
 
 
 
-//Hacer click en el ver en mapa y que se habra el marker en el mapa
-let tiendas = document.querySelectorAll('#tiendaNombre')
+
+const links = document.querySelectorAll('.icon-link');
+
+// for (let a = 0; a < links.length; a++){
+
+//     links[a].addEventListener('click', ()=>{
+//         marker.openPopup()
+//     })
+
+
+// }
+
+links.forEach((link, i)=>{
+    link.addEventListener('click', ()=>{
+        marker.openPopup(link[i])
+    })
+})
+
+
