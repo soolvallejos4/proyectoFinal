@@ -163,12 +163,12 @@ let diet = [
       "Nombre: Dietética El Ceibo",
       "Dirección: Av. Mitre 984, Quilmes",
       "Teléfono: 011 4224-8469"],
-  [
-      -34.71187085373017,
-      -58.28313424018897,
-      "Nombre: Manyula",
-      "Dirección: 9 de julio 141, Bernal",
-      "Teléfono: 011 7038-3762"],
+//   [
+//       ,
+//       ,
+//       "Nombre: ",
+//       "Dirección: ",
+//       "Teléfono: "],
   // ["Nombre: ",
   //     "Dirección: ",
   //     "Teléfono:"],
