@@ -1,3 +1,4 @@
+//La variable diet va a estar conectada con el archivo leaflets.js
 let diet = [
   [
       -34.62010988097318,
