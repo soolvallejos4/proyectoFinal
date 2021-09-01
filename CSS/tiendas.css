@@ -3,9 +3,13 @@
 #mapid { 
     width:70%;
     height:500px;
-    margin: 20px auto;
+    margin: 1.25rem auto;
     
      }
+
+.tiendaNombre > p{
+    text-align: justify;
+}
 
 .tiendasPopup{
     font-family:Georgia, 'Times New Roman', Times, serif;
