@@ -51,13 +51,13 @@ routerContact.get('/contacto', (req, res) => {
 //     const transporter = nodemailer.createTransport({
 //         service: 'gmail',
 //         auth: {
-//             user: 'ntchvergara@gmail.com',
-//             pass: 'Elisabet1986'
+//             user: '@gmail.com',
+//             pass: ''
 //         }
 //     })
 //     const mailOptions = {
 //         from: req.body.email,
-//         to: 'ntchvergara@gmail.com',
+//         to: '@gmail.com',
 //         subject: `Mensaje de ${req.body.email}: ${req.body.subject}`,
 //         text: req.body.message
 //     }
