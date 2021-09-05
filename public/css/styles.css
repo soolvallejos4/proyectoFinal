@@ -99,6 +99,11 @@ h3,h4,h5,h6 {
      user-select: none;
      border: none;
  }
+ .btn:hover{
+    background-color: var(--white);
+    color: var(--dark-light);
+    border: #01852d solid 1px;
+ }
  .btn-default:hover {
      color: var(--white);
      background-color: var(--main-color);
