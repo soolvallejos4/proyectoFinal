@@ -18,51 +18,37 @@ section{
     width: 60%;
     margin: 10px auto;
     display:flex;
-    flex-direction:column;  
-    border-bottom:3px solid black; 
-     
+    flex-direction:column;   
 }
-.receta{
-    display: flex;
-    flex-direction: column;
-}
-.receta h1{    
+
+
+h1{    
     text-align: center;
     margin-bottom: 20px;   
 }
-
-.receta h2{
-    text-align: center;
-    margin: 30px;
-}
-
-.receta img{    
+img{    
    align-self: center;
-   width: 300px;
-    height:225px;
+    width: 80%;
+    height:350px;
     margin: 10px;
+    padding: 10px;
     border-radius: 5px;
-
-
 }
-.receta h3{    
-    text-align: center;
-    margin-bottom: 20px;   
-}
-.receta ul{
-    align-self: center;
-}
-
 .receta p{
     text-align: justify;
     margin-top: 10px;
 }
 
+ol li{
+    text-align: justify;
+}
 #desayuno {
     font-size: 1rem
 }
 
-
+h4{
+    text-decoration: underline rgb(84, 255, 32);
+}
 
 @media screen and (max-width: 600px){
 
@@ -71,7 +57,4 @@ section{
         margin: 10px auto;
                  
     }
-
-
-
 }
