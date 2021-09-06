@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    
+    
+    
         
 }
 
@@ -25,6 +28,7 @@ body {
     -webkit-tap-highlight-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    overflow-x:hidden;
     
 }
 img {
@@ -63,6 +67,7 @@ h3,h4,h5,h6 {
 .container {
     max-width: 1170px;
     margin:auto;   
+    
 }
 .row {
     display: flex;
@@ -129,7 +134,8 @@ h3,h4,h5,h6 {
     top: 0;
     z-index: 99;
     width: 100%;
-    background-color:var(--dark-light)
+    background-color:var(--dark-light);
+    
 }
 .header::before {
     content: '';
@@ -259,6 +265,7 @@ h3,h4,h5,h6 {
 .login-inicio {
     display: flex;
     justify-content: flex-end;
+    
 
 }
 
@@ -297,6 +304,7 @@ h3,h4,h5,h6 {
     background-color:black ;
     opacity: 0.7;
     z-index: -1;
+    
 }
 .home-section .home-bg {
     position: absolute;
@@ -310,10 +318,12 @@ h3,h4,h5,h6 {
     background-position: center;
     z-index: -2;
     animation: zoomInOut 20s ease infinite;
+    
 }
 
 .home-section .min-vh-100 {
     padding: 130px 0;
+    
 }
 
 .home-text { 
@@ -554,6 +564,7 @@ h4 {
 /* media queries */
 @media screen and (max-width: 360px)
 {
+    
     .img-home {
         margin-left: 0;        
     }
@@ -565,7 +576,9 @@ h4 {
         width: 20px;
     }
 
-
+    footer > span{
+        font-size: 14px;
+    }
 }
  
 
@@ -578,7 +591,9 @@ h4 {
     .dropdown-menu{
         width: 20px;
     }
-    
+    footer > span{
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 651px) and (max-width: 900px)
