@@ -62,18 +62,6 @@ section{
     font-size: 1rem
 }
 
-/*Checkbox*/
-.list-group{
- width: 180px;
- border-radius: 10px;
- padding: auto;
- margin-bottom: 20px
- 
-}
-.list-group-item{
-    background-color: #c8c8c846
-}
-
 
 
 @media screen and (max-width: 600px){
