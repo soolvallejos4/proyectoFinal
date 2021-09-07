@@ -9,43 +9,41 @@ const routerLogin = express.Router()
 const routerContact = express.Router()
 const routerContactPost = express.Router()
 
-
-
-///Mis rutas estáticas
-
+//Rutas estáticas
 routerIndex.get('/index', (req, res) => {
-    res.render(__dirname + `/public/index`)
+   return res.status(200).render(__dirname + `/public/index`)
 })
 
 routerTiendas.get('/tiendas', (req, res) => {
-    res.render(__dirname + `/public/tiendas`)
+    return res.status(200).render(__dirname + `/public/tiendas`)
 
 })
 
 routerAlmuerzo.get('/almuerzo', (req, res) => {
-    res.render(__dirname + `/public/almuerzo`)
+    return res.status(200).render(__dirname + `/public/almuerzo`)
 
 })
 routerCena.get('/cena', (req, res) => {
-    res.render(__dirname + `/public/cena`)
+    return res.status(200).render(__dirname + `/public/cena`)
 
 })
 
 routerDesayuno.get('/desayuno', (req, res) => {
-    res.render(__dirname + `/public/desayuno`)
+    return res.status(200).render(__dirname + `/public/desayuno`)
 
 })
 
 routerLogin.get('/login', (req, res) => {
-    res.render(__dirname + `/public/login`)
+    return res.status(200).render(__dirname + `/public/login`)
 
 })
 
 routerContact.get('/contacto', (req, res) => {
-    res.render(__dirname + `/public/contacto`)
+    return res.status(200).render(__dirname + `/public/contacto`)
 
 })
 
+//Rutas dinámicas
 // routerContactPost.post('/contacto', (req, res) => {
 //     console.log(req.body)
 //     const transporter = nodemailer.createTransport({
