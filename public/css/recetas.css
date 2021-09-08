@@ -1,0 +1,60 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+
+:root {
+    --main-color: rgba(255, 255, 0, 0.521);
+    --dark: #0c1023;
+    --dark-light:rgba(0, 129, 58, 0.596);
+    --white: white;
+    --white-light: #c8c8c8;
+    --shadow: 0 0 15px rgba(0,0,0,0.25);
+    scroll-behavior: smooth; 
+    
+}
+body{
+    background-color: var(--dark-light)
+}
+
+section{
+    width: 60%;
+    margin: 10px auto;
+    display:flex;
+    flex-direction:column;   
+}
+
+
+h1{    
+    text-align: center;
+    margin-bottom: 20px;   
+}
+img{    
+   align-self: center;
+    width: 80%;
+    height:350px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.receta p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+ol li{
+    text-align: justify;
+}
+#desayuno {
+    font-size: 1rem
+}
+
+h4{
+    text-decoration: underline rgb(84, 255, 32);
+}
+
+@media screen and (max-width: 600px){
+
+    section{
+        width: 90%;
+        margin: 10px auto;
+                 
+    }
+}

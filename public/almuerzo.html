@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/logo/52db179069959544738ba98e972df99b.svg " type="image/x-icon">
+
+    <title>Recetas-Almuerzo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <!--CSS propio-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/recetas.css">
+
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid ">
+            <a class="navbar-brand ms-5" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5 " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end " style="width:100%">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html"><i class="fas fa-home"></i>
+                            Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-users"></i> Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-bread-slice"></i>
+                            Recetas
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item " href="./desayuno.html">Desayuno</a></li>
+                            <li><a class="dropdown-item" href="#almuerzo">Almuerzo</a></li>
+                            <li><a class="dropdown-item" href="./cena.html">Cena</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./tiendas.html"><i
+                                class="fas fa-store-alt"></i>
+                            Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contacto.html" tabindex="-1" aria-disabled="true"> <i
+                                class="fab fa-contao"></i> Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+        <!----------------------- INICIO CUERPO------------------------------------>
+    <section id="almuerzo" class="almuerzo container">
+        <h1>&mdash;Almuerzo&mdash;</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col receta">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78m-5VoiAtcmB60FsUOuECVvEskBGynF1cDC4fKDfcKIRdda9lIUGfL3WdAGdxop2neY&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">&mdash;Premezcla casera&mdash;</h3>
+                        <p class="card-text">La premezcla sin TACC es una mezcla que contiene harinas sin gluten y se
+                            utiliza para hacer muchas de las
+                            preparaciones que vamos a tener en nuestro sitio web, por eso es importante saber como
+                            prepararlas.
+                            Si bien podemos encontrarlas en los comercios, es muy fácil de armar la premezcla de forma
+                            casera,
+                            comprando los
+                            elementos por separado.
+                            Algunas de las harinas mas usadas son la harina de maíz, harina de soja, harina de papa,
+                            harina de
+                            arroz, fécula
+                            de mandioca y almidon de maíz. Por supuesto no son las únicas, pero si las mas “conocidas”.
+                        </p>
+                        
+                        <ul>
+                            <h4 >Ingredientes</h4>
+                            <li> 400 gramos de almidon de maíz</li>
+                            <li> 300 gramos de fécula de mandioca</li>
+                            <li>300 gramos de harina de arroz</li>
+
+                        </ul>
+
+                        <ul>
+                            <h4>Opcional puedes usar los siguientes ingredientes</h4>
+                            <li>5 cucharadas de leche en polvo</li>
+                            <li>2 cucharadas de goma xantica</li>
+                        </ul>
+
+                        <h3>Pero, ¿Qué es la goma xantica? </h3>
+                        <p>Es un polvo blanco que se suele agregar a algunas preparaciones sin TACC. Le aporta a
+                            nuestras comidas
+                            humedad y
+                            textura, entre otras cosas. La goma xantica nos ayuda a que nuestras recetas se parezcan a
+                            las que
+                            contienen
+                            gluten.
+                            Cabe aclarar que este ingrediente no le aporta ningún sabor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col receta">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/ktJgEvvoRhk/maxresdefault.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">&mdash;Tapa de empanadas&mdash;</h3>
+                        <ul>
+                            <h4>Ingredientes</h4>
+                            <li>150 gramos de premezcla sin gluten</li>
+                            <li>1 cucharadita de goma xantica</li>
+                            <li>40 gramos de fécula de mandioca</li>
+                            <li>1 cucharadita de polvo para hornear </li>
+                            <li>1 huevo</li>
+                            <li>40 gramos de almidon de maíz</li>
+                            <li>1 cucharada de aceite</li>
+                            <li>100 cc de agua</li>
+                        </ul>
+                        <h4>Elaboración (Pasos)</h4>
+                        <ol>
+                            <li>Mezclar la harina sin gluten, el almidon de maíz, la fécula de mandioca, el polvo para
+                                hornear y
+                                la
+                                goma
+                                xantica.</li>
+                            <li>Luego agregar el huevo, el aceite y el agua e integrar todo muy bien. Recomendamos que
+                                primero
+                                sea
+                                con una
+                                cuchara y luego con las manos asi se aseguran de que quede la masa bien mezclada. Debes
+                                lograr
+                                una
+                                masa lisa
+                                y elástica y que no se pegue en los dedos.</li>
+                            <li>Dejar descansar la masa 15 minutos</li>
+                            <li>Luego hay que estirar la masa con un palote y cortar las tapas de las empanadas. El
+                                grosor de
+                                las
+                                tapas debe
+                                estar entre 2 y 3 milimetros aproximadamente.</li>
+                            <li>Para cortar las tapas pueden utilizar un cortante.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://badun.nestle.es/imgserver/v1/80/1290x742/tarta-de-cebolla-y-queso.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">&mdash;Tarta de Queso y Cebolla sin Gluten / TACC&mdash;</h3>
+
+                        <ul>
+                            <h4>Ingredientes para la masa</h4>
+                            <li>280 grs. de Premezcla Universal</li>
+                            <li>1 Cdta. de Goma xántica</li>
+                            <li>1/2 Cdta. de Sal</li>
+                            <li>140 Grs. de Manteca</li>
+                            <li>1 Huevo</li>
+                            <li>2 a 3 cdas. de agua</li>
+                        </ul>
+
+                        <ul>
+                            <h4>Ingredientes para el relleno</h4>
+                            <li>2 cebollas moradas</li>
+                            <li>100 grs. de queso cheddar (puede ser otro queso blando)</li>
+                            <li>125 ml de crema de leche</li>
+                            <li>3 huevos</li>
+                            <li>50 ml. de leche</li>
+                            <li>pimienta negra a gusto</li>
+                        </ul>
+
+                        <ol>
+                            <h4>Elaboración (Pasos)</h4>
+                            <li>Colocar la Premezcla, la Goma xántica y la Sal en un bowl y mezclar bien.</li>
+                            <li>Incorporar la Manteca rallada y aplastarla con una cuchara sobre los secos. Desmenuzarla
+                                con los
+                                dedos.</li>
+                            <li>Batir el huevo y agregarlo, mezclar para incorporar.</li>
+                            <li>Agregar las dos cucharadas de Agua y usar los dedos para integrar la masa. Armar un
+                                bollo, si queda
+                                muy seco, agregar una cucharada más de agua.</li>
+                            <li>Envolver la masa en film y refrigerar por 30 minutos.</li>
+                            <li>Para preparar el relleno, saltear las cebollas picadas en una sartén.</li>
+                            <li>Batir los Huevos con la Leche y la Crema en un bowl. Sazonar con Pimienta y agregar el
+                                Queso
+                                rallado. Luego incorporar las cebollas cocidas y mezclar bien.</li>
+                            <li>Estirar la masa de la tarta con palo de amasar y cubrir el fondo y los bordes de la
+                                tartera. Pinchar
+                                la superficie con un tenedor. Hornear 10 minutos a 180 grados.</li>
+                            <li>Rellenar la tapa de tarta precocida y acomodar el relleno con una cuchara.</li>
+                            <li>Hornear a 160 grados de 30 a 40 minutos, hasta que esté dorada y crujiente.</li>
+                            <li>Servir tibia</li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://estaticos.serpadres.es/media/cache/1140x_thumb/uploads/images/recipe/5d09f9bf5cafe83a69f1f7f0/pizza-sin-gluten_0.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">&mdash;Pizza sin Gluten / TACC&mdash;</h3>
+                        <ul>
+                            <h4>Ingredientes</h4>
+                            <li>280 grs. de Premezcla de Pan o Premezcla Universal</li>
+                            <li>2 Cdas. (30 Grs.) de Azúcar</li>
+                            <li>1 Cdta. (8 Grs.) de Levadura en polvo</li>
+                            <li>1 y 1/2 Cdta. de Polvo de hornear</li>
+                            <li>40 Grs. de Almendras molidas (sino, sustituir por Premezcla o Harina de Maíz)</li>
+                            <li>3 Cdas. de Semillas de Lino molidas</li>
+                            <li>2 Cdtas. de Sal (a gusto)</li>
+                            <li>1/4 Taza de Aceite de Oliva</li>
+                            <li>2 y 1/2 Cdas. de Vinagre de manzana</li>
+                            <li>Agua tibia</li>
+                            <li>Salsa, especias y Queso a gusto</li>
+                        </ul>
+                        <ol>
+                            <h4>Elaboración (Pasos)</h4>
+                            <li>Combinar el Azúcar con 250 Ml. de Agua tibia. Rociar la Levadura encima y dejar
+                                fermentar.
+                            </li>
+                            <li>En un bowl colocar la Premezcla, las Almendras, las Semillas molidas la Sal y el Polvo
+                                de hornear y
+                                mezclar bien.</li>
+                            <li>Incorporar la Levadura, junto con el Aceite y el Vinagre. Continuar procesando hasta que
+                                la masa sea
+                                suave y pegajosa. Cubrir y dejar levar en un lugar tibio. Levará menos que una masa
+                                tradicional,
+                                dejarla hasta que presionando con el dedo notemos que se le están haciendo burbujas.
+                                Alrededor de 1
+                                hora y media.</li>
+                            <li>Precalentar el horno a 160 grados. Aceitar la placa de horno (puede ser que alcance para
+                                dos), esta
+                                masa puede ser pegajosa, por lo que es mejor que la placa sea anti adherente o usar
+                                papel manteca.
+                            </li>
+                            <li>Con una espátula aceitada distribuir la masa en la placa y alisar la superficie a 1 Cm
+                                de espesor
+                                aproximadamente. Cubrir y dejar reposar 20 minutos más.</li>
+                            <li>Hornear de 30 a 40 minutos hasta dorar. Rotar la fuente en el horno periódicamente
+                                durante el
+                                horneado.</li>
+                            <li>Subir la temperatura del horno. Retirar la pizza y colocarle encima la salsa, las
+                                especias y el
+                                queso. Hornear por aproximadamente 10 minutos más, hasta derretir el queso.</li>
+                            <li>Se pueden conservar en freezer las pizzas cocidas y, al momento de comerlas, dejarlas
+                                tomar
+                                temperatura ambiente y realizar el último paso (de colocar el queso, la salsa y los
+                                condimentos) y
+                                hornear.</li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col receta">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col receta">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col receta">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col receta">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div> -->
+
+        </div> <!--Fin de row-->
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    </section>
+    <!-----------------------ALMUERZO FIN*------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------------------Fin cuerpo----------------------->
+
+    <footer class="footer mt-auto py-3 bg-dark container-fluid">
+        <span class="text-muted  ms-5 ">Programa desde tu casa. Proyecto final 2021</span>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
