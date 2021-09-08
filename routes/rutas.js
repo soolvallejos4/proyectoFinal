@@ -7,7 +7,7 @@ const routerCena = express.Router()
 const routerDesayuno = express.Router()
 const routerLogin = express.Router()
 const routerContact = express.Router()
-const routerContactPost = express.Router()
+// const routerContactPost = express.Router()
 
 //Rutas estáticas
 routerIndex.get('/index', (req, res) => {
@@ -83,6 +83,6 @@ module.exports = {
     routerCena,
     routerDesayuno,
     routerLogin,
-    routerContact,
-    routerContactPost
+    routerContact
+    // routerContactPost
 };

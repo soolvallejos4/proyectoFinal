@@ -9,8 +9,9 @@ const {
     routerCena,
     routerDesayuno,
     routerLogin,
-    routerContact,
-    routerContactPost} = require('./routes/rutas');
+    routerContact
+    // routerContactPost
+} = require('./routes/rutas');
 
 app.use(express.static('public'))
 app.use(express.json())
@@ -24,7 +25,7 @@ app.use('/', routerCena)
 app.use('/', routerDesayuno)
 app.use('/', routerLogin)
 app.use('/', routerContact)
-app.use('/', routerContactPost)
+// app.use('/', routerContactPost)
 
 
 
