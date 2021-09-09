@@ -17,7 +17,7 @@ app.use(express.static('public'))
 app.use(express.json())
 
 
-//archivos estáticos
+//rutas estáticos
 app.use('/', routerIndex)
 app.use('/', routerTiendas)
 app.use('/', routerAlmuerzo)
@@ -25,6 +25,8 @@ app.use('/', routerCena)
 app.use('/', routerDesayuno)
 app.use('/', routerLogin)
 app.use('/', routerContact)
+
+//rutas dinámicas
 // app.use('/', routerContactPost)
 
 
