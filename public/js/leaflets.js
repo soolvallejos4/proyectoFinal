@@ -17,27 +17,3 @@ for (let i = 0; i < diet.length; i++) {
 console.log(markers)
 
 
-// //traigo el html Ver en mapa
-// const links = document.querySelectorAll('.links');
-
-// // for(let i = 0; i < markers.length; i++){
-// //     for(let a = 0; a <links.length; a++)
-// //    { links[a].addEventListener('click', ()=>{
-// //         markers[i].openPopup();
-// //     })
-// // }
-
-// // }
-
-
-// //creo un loop para que en cada links, se cree un link y su posicion
-//     links.forEach((link, index, links) => {
-//         link.addEventListener('click', () => 
-//         {
-//                     marker.openPopup(markers[index])
-
-//                     console.log(markers[index])
-//             }
-//         )
-//     })
-
