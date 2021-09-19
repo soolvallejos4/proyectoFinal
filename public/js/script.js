@@ -1,6 +1,6 @@
 //--------toggle navbar------
 const navToggler = document.querySelector(".navbar-toggler");
-navToggler.addEventListener("click", toggleNav )
+navToggler.addEventListener("click", toggleNav)
 
 function toggleNav() {
     navToggler.classList.toggle("active");
@@ -9,15 +9,15 @@ function toggleNav() {
 
 // CERRANDO NAVEGADOR CUANDO HAGO CLICK
 
-document.addEventListener("click", function(e) {
+document.addEventListener("click", function (e) {
 
     if (e.target.closest(".nav-item")) {
         toggleNav()
-    } 
+    }
 })
 
 //-------------sticky hader------------------------------
-window.addEventListener("scroll", function( ){
+window.addEventListener("scroll", function () {
     if (this.pageXOffset > 60) {
         document.querySelector(".header").classList.add("sticky");
     } else {
@@ -27,3 +27,4 @@ window.addEventListener("scroll", function( ){
 
 
 //
+

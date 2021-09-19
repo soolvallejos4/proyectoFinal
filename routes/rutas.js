@@ -1,5 +1,8 @@
+//Módulos
 const express = require('express')
 const nodemailer = require('nodemailer')
+
+
 const routerIndex = express.Router()
 const routerTiendas = express.Router()
 const routerAlmuerzo = express.Router()
@@ -7,7 +10,7 @@ const routerCena = express.Router()
 const routerDesayuno = express.Router()
 const routerLogin = express.Router()
 const routerContact = express.Router()
-const routerContactPost = express.Router()
+// const routerContactPost = express.Router()
 
 //Rutas estáticas
 routerIndex.get('/index', (req, res) => {
@@ -83,6 +86,6 @@ module.exports = {
     routerCena,
     routerDesayuno,
     routerLogin,
-    routerContact,
-    routerContactPost
+    routerContact
+    // routerContactPost
 };
