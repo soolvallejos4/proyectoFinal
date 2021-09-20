@@ -9,6 +9,9 @@
     background-position: center center;
     background-repeat: none;
     background-size: cover;
+    position: absolute;
+    width: 100vw;
+    z-index: -10;
 }
 .bg-send{
     font-family: sans-serif;
@@ -83,6 +86,8 @@
 }
 .fijar {
     margin-top: -135px;
+    color: green;
+    z-index: 1;
 }
 
 .content-send {
