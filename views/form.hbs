@@ -1,0 +1,49 @@
+{{>header}}
+
+<form action="" class="formulario">
+        <h3 class="formulario-titulo">Contactanos</h3>
+        <input type="text" class="formulario-input" name="name" autocomplete="off">
+        <label for="" class="formulario-label">Nombre</label>
+
+        <input type="email" class="formulario-input" name="email" autocomplete="off">
+        <label for="" class="formulario-label">Correo</label>
+
+        <input type="tel" class="formulario-input" name="cel">
+        <label for="" class="formulario-label">Teléfono</label>
+
+
+        
+        <input type="text" class="formulario-input" name="msj">
+        <label for="" class="formulario-label">Mensaje</label>
+
+        <button  class=" btn formulario-submit">Enviar</button>
+    </form>
+
+
+<script>
+    const form = document.querySelector("form")
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault()
+        const name = form.name.value
+        const email= form.email.value
+        const cel = form.cel.value
+        const msj = form.msj.value
+       
+        try{
+            
+             
+            const res = await fetch('/contacto',{
+                method: "POST",
+                body: JSON.stringify({name, email,cel,msj}),
+                headers: {'Content-Type': 'application/json'}
+            })
+            const data = await res.json()
+            console.log(data)
+        }catch(err){
+            console.log(err)
+        }
+
+
+    })
+
+</script>

@@ -1,3 +1,5 @@
+
+
 let inputs = document.getElementsByClassName('formulario-input');
  for(let i = 0; i<inputs.length; i++){
     inputs[i].addEventListener('keyup', function(){
@@ -9,3 +11,11 @@ let inputs = document.getElementsByClassName('formulario-input');
 
     })
  }
+
+ 
+ 
+ 
+
+
+
+ 

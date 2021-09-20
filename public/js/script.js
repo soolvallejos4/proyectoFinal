@@ -16,14 +16,14 @@ document.addEventListener("click", function (e) {
     }
 })
 
-//-------------sticky hader------------------------------
-window.addEventListener("scroll", function () {
-    if (this.pageXOffset > 60) {
-        document.querySelector(".header").classList.add("sticky");
-    } else {
-        document.querySelector(".header").classList.remove("sticky");
-    }
-})
+// -------------sticky hader------------------------------ NO FUNCIONA
+// window.addEventListener("scroll", function () {
+//     if (this.pageXOffset > 60) {
+//         document.querySelector(".header").classList.add("sticky");
+//     } else {
+//         document.querySelector(".header").classList.remove("sticky");
+//     }
+// })
 
 
 //
