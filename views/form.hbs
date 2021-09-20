@@ -1,6 +1,6 @@
 {{>header}}
 
-<form action="" class="formulario">
+<form action="/contacto/send" class="formulario">
         <h3 class="formulario-titulo">Contactanos</h3>
         <input type="text" class="formulario-input" name="name" autocomplete="off">
         <label for="" class="formulario-label">Nombre</label>
@@ -23,7 +23,7 @@
 <script>
     const form = document.querySelector("form")
     form.addEventListener('submit', async (e) => {
-        e.preventDefault()
+        
         const name = form.name.value
         const email= form.email.value
         const cel = form.cel.value

@@ -6,3 +6,7 @@ module.exports.contactController = (req,res) =>{
 
 
 }
+
+module.exports.sendContacController = (req, res) => {
+    return res.status(200).render("contacto-send", {layout: "main"})
+}
