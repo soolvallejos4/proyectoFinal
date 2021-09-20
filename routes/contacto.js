@@ -1,8 +1,9 @@
-const {contactController, sendContacController} = require('../controllers/contacto')
+const {contactController} = require('../controllers/contacto')
 const {contact} = require('../models/contacto')
 
 const express = require ('express')
 const router = express.Router()
+
 
 router.get('/', contactController)
 
@@ -19,5 +20,5 @@ router.post('/', async (req,res) =>{
     }
 })
 
-router.get('/send', sendContacController)
+
 module.exports = router

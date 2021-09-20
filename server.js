@@ -17,6 +17,7 @@ const {
 } = require('./routes/rutas');
 
 const RoutesForm = require('./routes/contacto')
+const RoutesSend = require('./routes/send')
 
 
 app.set('view engine', 'hbs')
@@ -42,6 +43,7 @@ app.use('/', routerDesayuno)
 app.use('/', routerLogin)
 
 app.use('/contacto', RoutesForm)
+app.use('/send', RoutesSend)
 
 
 

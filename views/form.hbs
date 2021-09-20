@@ -1,6 +1,7 @@
-{{>header}}
 
-<form action="/contacto/send" class="formulario">
+<div class="bg-contacto">
+    {{>header}}
+<form action="/send" class="formulario">
         <h3 class="formulario-titulo">Contactanos</h3>
         <input type="text" class="formulario-input" name="name" autocomplete="off">
         <label for="" class="formulario-label">Nombre</label>
@@ -19,7 +20,7 @@
         <button  class=" btn formulario-submit">Enviar</button>
     </form>
 
-
+</div>
 <script>
     const form = document.querySelector("form")
     form.addEventListener('submit', async (e) => {
