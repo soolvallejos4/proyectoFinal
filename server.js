@@ -47,14 +47,6 @@ app.use('/send', RoutesSend)
 
 
 
-//rutas dinámicas
-// app.use('/', routerContactPost)
-
-
-
-
-
-
 app.listen(port, ()=>{
     console.log(`Server running on port: ${port}`)
 })
