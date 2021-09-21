@@ -1,6 +1,6 @@
 const express = require('express')
 
-const port = 3000
+
 const app = express();
 const {
     routerIndex, 
@@ -32,8 +32,8 @@ app.use('/', routerContact)
 
 
 
+const PORT = process.env.PORT || 3000
 
-
-app.listen(port, ()=>{
-    console.log(`Server running on port: ${port}`)
+app.listen(PORT, ()=>{
+    console.log(`Server running on port: ${PORT}`)
 })
