@@ -4,7 +4,7 @@ module.exports.request = (query) => new Promise((res,rej) =>{
 
     const connection = mysql.createConnection({
         host: 'us-cdbr-east-04.cleardb.com',
-        port: 3306,
+        
         user: 'ba5f1e601a4443',
         password: 'ee51fd67',
         database: 'heroku_6f163815043d3e7'
