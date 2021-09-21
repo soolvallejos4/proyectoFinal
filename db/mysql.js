@@ -3,11 +3,11 @@ const mysql = require('mysql')
 module.exports.request = (query) => new Promise((res,rej) =>{
 
     const connection = mysql.createConnection({
-        host: 'us-cdbr-east-04.cleardb.com',
-        
-        user: 'ba5f1e601a4443',
-        password: 'ee51fd67',
-        database: 'heroku_6f163815043d3e7'
+        host: 'localhost',
+        port: 3306,
+        user: 'Salinas',
+        password: 'akatsuki',
+        database: 'contacto'
     });
 
     connection.query(query, (err, data, fields) =>{
