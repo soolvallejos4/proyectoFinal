@@ -18,32 +18,29 @@ const router = express.Router()
 
 //Rutas estáticas
 routerIndex.get('/index', (req, res) => {
-   return res.status(200).render(__dirname + `/public/index`)
+   return res.status(200).render("index", {layout: "index"})
 })
 
 routerTiendas.get('/tiendas', (req, res) => {
-    return res.status(200).render(__dirname + `/public/tiendas`)
+    return res.status(200).render("tiendas", {layout: "laytiendas"})
 
 })
 
 routerAlmuerzo.get('/almuerzo', (req, res) => {
-    return res.status(200).render(__dirname + `/public/almuerzo`)
+    return res.status(200).render("almuerzo", {layout:"default"})
 
 })
 routerCena.get('/cena', (req, res) => {
-    return res.status(200).render(__dirname + `/public/cena`)
+    return res.status(200).render("cena", {layout:"default"})
 
 })
 
 routerDesayuno.get('/desayuno', (req, res) => {
-    return res.status(200).render(__dirname + `/public/desayuno`)
+    return res.status(200).render("desayuno", {layout: "default"})
 
 })
 
-routerLogin.get('/login', (req, res) => {
-    return res.status(200).render(__dirname + `/public/login`)
 
-})
 
 // routerContact.get('/contacto', contactController)
 
