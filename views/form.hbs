@@ -1,0 +1,174 @@
+
+<div class="bg-contacto">
+    {{>header}}
+<form action="/send" class="formulario">
+        <h3 class="formulario-titulo">Contactanos</h3>
+        
+        <input type="text" id="name" class="formulario-input" name="name" autocomplete="off" >
+        <label for="name" class="formulario-label" id="label-name">Nombre</label>
+        <p id="errName"></p>
+        
+        <input type="email" id="email" class="formulario-input" name="email" autocomplete="off">
+        <label for="email" class="formulario-label" id="label-email">Correo</label>
+        <p id="errEmail"></p>
+        
+        <input type="tel" id="cel" class="formulario-input" name="cel">
+        <label for="cel" class="formulario-label" id="label-cel">Teléfono</label>
+        <p id="errTel"></p>
+
+        
+        <input type="text" id="msj" class="formulario-input" name="msj">
+        <label for="msj" class="formulario-label" id="label-msj">Mensaje</label>
+        <p id="errMsj"></p>
+
+        <button  class=" btn formulario-submit">Enviar</button>
+    </form>
+    {{>footer}}
+</div>
+
+<script>
+       const inputs = document.querySelectorAll('.formulario-input')
+    for(let i = 0; i<inputs.length; i++){
+    inputs[i].addEventListener('keyup', function(){
+        if(this.value.length>0){
+            this.nextElementSibling.classList.add('fijar');
+        }else {
+            this.nextElementSibling.classList.remove('fijar')
+        }
+
+    })
+ }
+
+    const form = document.querySelector("form")
+
+        
+
+    const inputName = document.querySelector("#name")
+    const inputEmail = document.querySelector("#email")
+    const inputCel = document.querySelector("#cel")
+    const inputMsj = document.querySelector("#msj")
+    //ERROR SELECTORS
+    const errName = document.querySelector("#errName")
+    const errEmail = document.querySelector("#errEmail")
+    const errTel = document.querySelector("#errTel")
+    const errMsj = document.querySelector("#errMsj")
+
+    
+    inputName.addEventListener("blur", ()=>{
+        const name = form.name.value
+        if(name.length < 3){
+         errName.innerHTML="❌ El nombre debe contener mas de 3 letras"
+         
+    }else{
+        errName.innerHTML= ""
+        
+    }
+        
+    })
+
+    inputEmail.addEventListener("blur", () =>{
+        const email= form.email.value
+        
+        constemailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
+        if(constemailRegex.test(email)){
+            errEmail.innerHTML=""
+            
+        }else{
+            errEmail.innerHTML= "❌ El email no es valido"
+            
+        }
+    })
+
+    inputCel.addEventListener("blur", () =>{
+        const cel = form.cel.value
+        const confirmNumber = /^[0-9]+$/
+        if(cel.match(confirmNumber)){
+            if(cel.length<8 || cel.length > 16 || cel.length==0){
+            errTel.innerHTML="❌  Debe contener mas de 8 numeros y menos de 16"
+        }else{
+            errTel.innerHTML=""
+
+        }
+        }else{
+            errTel.innerHTML= "❌ El valor no es numerico"
+        }
+    })
+
+    inputMsj.addEventListener("blur", ()=>{
+        const msj = form.msj.value
+        
+        if(msj.length==0){
+            errMsj.innerHTML="❌ Por favor deje su mensaje antes de enviar"
+            
+        }else{
+            errMsj.innerHTML=""
+        }
+    })
+
+
+    form.addEventListener('submit', async (e) => {
+        
+        const name = form.name.value
+        const email= form.email.value
+        const cel = form.cel.value
+        const msj = form.msj.value
+        const constemailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
+       
+           try{
+               if(name.trim().length<3 || !constemailRegex.test(email)|| msj.trim().length==0){
+                   e.preventDefault()
+                   
+                 if(name.length < 3){
+                    errName.innerHTML="❌ El nombre debe contener mas de 3 letras"
+                    
+                }else{
+                    errName.innerHTML= ""
+                    
+                }
+                 
+
+
+                 
+                if(constemailRegex.test(email)){
+                    errEmail.innerHTML=""
+                    
+                }else{
+                    errEmail.innerHTML= "❌ El email no es valido"
+            
+                 }
+
+
+                 
+                 if(msj.length==0){
+                    errMsj.innerHTML="❌ Por favor deje su mensaje antes de enviar"
+                    
+                }else{
+                    errMsj.innerHTML=""
+                }
+
+
+               }else{
+
+                   const res = await fetch('/contacto',{
+                method: "POST",
+                body: JSON.stringify({name, email,cel,msj}),
+                headers: {'Content-Type': 'application/json'}
+            })
+           
+            const data = await res.json()
+               }
+            
+            
+   
+            
+        }catch(err){
+            console.log(err)
+        }
+
+
+    })
+
+       
+        
+
+</script>

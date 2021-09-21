@@ -3,12 +3,24 @@
     margin: 0;
     padding: 0;
 }
-body {
+.bg-contacto{
     font-family: sans-serif;
     background-image: url(/img/fondo-contacto.jpeg);
     background-position: center center;
     background-repeat: none;
     background-size: cover;
+    position: absolute;
+    width: 100vw;
+    z-index: -10;
+}
+.bg-send{
+    font-family: sans-serif;
+    background-color: rgba(151, 147, 147, 0.171);
+    background-image: url(../img/message.png);
+    background-position: center center;
+    background-repeat:no-repeat;
+    height: 100vh;
+    z-index: 1;
 }
 
 .formulario {
@@ -74,4 +86,26 @@ body {
 }
 .fijar {
     margin-top: -135px;
+    color: green;
+    z-index: 1;
+}
+
+.content-send {
+    text-align: center;
+    margin-top: 10rem;
+}
+.btn-send{
+    max-width: 300px;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#errName, #errEmail, #errTel, #errMsj{
+    position: absolute;
+    z-index: 2;
+    margin-top: -2.4rem;
+    color: red;
+    font-size: 0.7rem;
 }

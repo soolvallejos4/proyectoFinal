@@ -3,6 +3,9 @@ const express = require('express')
 const nodemailer = require('nodemailer')
 
 
+const {contactController} = require('../controllers/contacto')
+
+
 const routerIndex = express.Router()
 const routerTiendas = express.Router()
 const routerAlmuerzo = express.Router()
@@ -10,41 +13,41 @@ const routerCena = express.Router()
 const routerDesayuno = express.Router()
 const routerLogin = express.Router()
 const routerContact = express.Router()
+const router = express.Router()
 // const routerContactPost = express.Router()
 
 //Rutas estáticas
 routerIndex.get('/index', (req, res) => {
-   return res.status(200).render(__dirname + `/public/index`)
+   return res.status(200).render("index", {layout: "index"})
 })
 
 routerTiendas.get('/tiendas', (req, res) => {
-    return res.status(200).render(__dirname + `/public/tiendas`)
+    return res.status(200).render("tiendas", {layout: "laytiendas"})
 
 })
 
 routerAlmuerzo.get('/almuerzo', (req, res) => {
-    return res.status(200).render(__dirname + `/public/almuerzo`)
+    return res.status(200).render("almuerzo", {layout:"default"})
 
 })
 routerCena.get('/cena', (req, res) => {
-    return res.status(200).render(__dirname + `/public/cena`)
+    return res.status(200).render("cena", {layout:"default"})
 
 })
 
 routerDesayuno.get('/desayuno', (req, res) => {
-    return res.status(200).render(__dirname + `/public/desayuno`)
+    return res.status(200).render("desayuno", {layout: "default"})
 
 })
 
-routerLogin.get('/login', (req, res) => {
-    return res.status(200).render(__dirname + `/public/login`)
 
-})
 
-routerContact.get('/contacto', (req, res) => {
-    return res.status(200).render(__dirname + `/public/contacto`)
+// routerContact.get('/contacto', contactController)
 
-})
+// routerContact.get('/contacto', (req, res) => {
+//     return res.status(200).render(__dirname + `/public/contacto`)
+
+// })
 
 //Rutas dinámicas
 // routerContactPost.post('/contacto', (req, res) => {
@@ -76,6 +79,7 @@ routerContact.get('/contacto', (req, res) => {
 
 // })
 
+// 
 
 
 
@@ -86,6 +90,6 @@ module.exports = {
     routerCena,
     routerDesayuno,
     routerLogin,
-    routerContact
+    
     // routerContactPost
 };
